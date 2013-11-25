@@ -1,2 +1,7 @@
 get_barrier
+RNAeval
+RNAlocopt
+exhaustive
+exhaustive2
+get_barrier_tabu
 *.o
