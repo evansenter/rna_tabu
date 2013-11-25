@@ -29,3 +29,5 @@ clean:
 small:
 	make clean
 	rm $(EXE)
+install:
+	cp get_barrier ~/bin
