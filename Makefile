@@ -87,7 +87,9 @@ params.o: params.c config.h energy_par.h fold_vars.h utils.h params.h
 	gcc $(CFLAGS) -c params.c
 
 clean:	
-	rm -f *~ $(OBJ) a.out get_barrier_tabu
+	rm -f *~ $(OBJ) a.out get_barrier_tabu RNAeval RNAlocopt exhaustive exhaustive2
 small:
 	make clean
 	rm $(EXE)
+install_tabu: get_barrier_tabu
+	cp get_barrier_tabu ~/bin
